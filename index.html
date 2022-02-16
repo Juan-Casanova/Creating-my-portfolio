@@ -21,7 +21,7 @@
 <body>
     
     <!-- ********************** Design PC ******************************** -->
-        <section id="father-pc">
+        <section  class="class-flex">
             <!-- ******************* NAV BAR PC ********************** -->
                 <section id="navbar-pc" class="sticky-top container flex-column">
                     <nav class="navbar navbar-light flex-md-column pt-5">
@@ -33,7 +33,7 @@
                             Lic. Juan Casanova
                         </h6>
                         <br>
-                        <a class="navbar-brand text-underline" href="#">
+                        <a class="navbar-brand text-underline" href="#container-about-me">
                             About me
                         </a>
                         <a class="navbar-brand text-underline" href="#">
@@ -56,9 +56,27 @@
                 </section>
 
             <!-- ******************* PARTS OF PC ********************* -->
-                <section id="body-pc">
-                    <section id="intro-pc">
-
+                <section class="body-pc class-flex " >
+                    <section class="intro-pc class-flex class-mid-vertical" id="particles-js">
+                        <div id="container-title" class="class-flex">
+                            <h2 class="class-flex class-mid-mid class-100-width">
+                                <span class="typed"></span>
+                            </h2>
+                        </div>
+                    </section>
+                    <section id="container-about-me" class="class-flex">
+                        <div id="container-img-about-me">
+                            <img id="img-about-me" src="https://res.cloudinary.com/pelos-locos/image/upload/v1644980044/Portafolio/yo.png" alt="yo">
+                        </div>
+                        <div id="container-text-about-me" class="class-100-width">
+                            <h3 id="title-about-me" class="class-100-width text-center"> ABOUT ME </h3>
+                            <p id="text-about-me" class="class-100-width">
+                                My name is Juan Manuel Casanova Cruz, I've a degree in interactive digital content, and a law student.
+                                <br>
+                                <br>
+                                I've experience developing since 2016 in the c# and c++ language, and since 2018 i've been developing in web, I started with the MEAN stack, and recently I just graduated from Academlo where I got experience developing with the MERN stack.
+                            </p>
+                        </div>
                     </section>
                 </section>
         </section>
@@ -84,5 +102,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous"></script>
+
+    <!-- *********************Script de whatssap************************-->
+        <!-- GetButton.io widget -->
+            <script type="text/javascript">
+                (function () {
+                    var options = {
+                        whatsapp: "5214422855608", // WhatsApp number
+                        call_to_action: "Envíame un mensaje", // Call to action
+                        position: "right", // Position may be 'right' or 'left'
+                        pre_filled_message: "Hola, buen día", // WhatsApp pre-filled message
+                    };
+                    var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+                    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                })();
+            </script>
+         <!-- /GetButton.io widget -->
+    
+    <!-- ********************* Script de particulas*********************-->
+    <script src="/scripts/particles.min.js"></script>
+    <script src="/scripts/app.js"></script>
+
+    <!-- ********************* Script de escritura ********************* -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- ********************* My scripts ****************************** -->
+    <script src="/scripts/main.js"></script>
 
 </html>
