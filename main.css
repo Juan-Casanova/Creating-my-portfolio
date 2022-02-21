@@ -29,6 +29,28 @@ body {
     width: 100%;
 }
 
+.title-size {
+    font-size: 4em;
+}
+
+.class-25-width {
+    width: 25%;
+}
+
+.class-50-width {
+    width: 50%;
+}
+
+.text-white {
+    color: white;
+}
+
+.class-mid-botton {
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
 /************ CSS OF PC *************/
 
 #particles-js {
@@ -117,5 +139,31 @@ body {
 #title-about-me {
     font-size: 4em;
     height: 0;
+}
+
+#container-skills {
+    width: 100%;
+    height: 110vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(https://res.cloudinary.com/pelos-locos/image/upload/v1645213966/Portafolio/Bg-Black.jpg);
+    z-index: -1s;
+    background-size: cover;
+    background-position-y: -35px;
+    background-repeat: no-repeat;
+}
+
+#title-skills {
+    color: white;
+    height: 30%;
+}
+
+#container-cols {
+    height: 70%;
+}
+
+#container-projects {
+    width: 100%;
+    height: 100vh;
 }
 /************ CSS OF MOVIL **********/
