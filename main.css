@@ -168,27 +168,62 @@ body {
 
 #container-projects {
     width: 100%;
-    height: 100vh;
+    height: max-content;
     background-image: radial-gradient(circle at 0% 0%, #3a5d6a 0, #084658 50%, #003047 100%);
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
-.container-project {
-    width: 70%;
-    border: 5px solid rgb(84, 219, 6);
-    border-radius: 5px;
-    height: 20%;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    margin: 15px;
+#title-projects {
+    color: white;
+    padding: 30px;
+    width: 100%;
 }
 
-.container-project:hover {
-    color: black;
-    background-color: rgb(84, 219, 6);
+.container-project-left {
+    width: 50%;
+    margin-left: 10% !important;
+    border: 5px solid rgb(84, 219, 6);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.container-project-left:hover {
+    background-color: black;
+    transition-duration: 2s;
+    width: 40%;
+}
+
+.container-project-right {
+    width: 50%;
+    margin-left: 40% !important;
+    border: 5px solid rgb(84, 219, 6);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: right;
+}
+
+.container-project-right:hover {
+    background-color: black;
+    width: 40%;
     transition-duration: 2s;
 }
+
+.link-pages {
+    color: white;
+    text-decoration: none;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.text-project {
+    font-size: 1em;
+}
+
 /************ CSS OF MOVIL **********/
