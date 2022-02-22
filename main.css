@@ -56,7 +56,6 @@ body {
 #particles-js {
     height: 100vh;
     width: 100%;
-    z-index: -1;
 }
 
 #navbar-pc {
@@ -107,13 +106,14 @@ body {
 }
 
 #container-about-me {
-    height: 75vh;
+    height: max-content;
     width: 100%;
 }
 
 #container-img-about-me {
     width: 25%;
     height: 100%;
+    margin-bottom: 50px;
 }
 
 #container-text-about-me {
@@ -138,7 +138,7 @@ body {
 
 #title-about-me {
     font-size: 4em;
-    height: 0;
+    height: 150px;
 }
 
 #container-skills {
@@ -233,3 +233,9 @@ body {
 }
 
 /************ CSS OF MOVIL **********/
+
+@media (min-width: 992px) {
+    .viewable-on-movil {
+        display: none !important;
+    }
+}
