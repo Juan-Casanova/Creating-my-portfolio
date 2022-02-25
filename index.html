@@ -16,14 +16,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    
+    <link rel="icon" href="https://res.cloudinary.com/pelos-locos/image/upload/c_scale,h_150/v1645818283/Portafolio/IconoPagina.png">
+
 </head>
 <body>
     
     <!-- ********************** Design PC ******************************** -->
-        <section  class="class-flex viewable-on-pc">
-            <!-- ******************* NAV BAR PC ********************** -->
-                <section id="navbar-pc" class="sticky-top container flex-column">
+        <section  class="class-flex flex-wrap">
+            <!-- ******************* NAV BAR PC AND MOVIL ********************** -->
+                <section id="navbar-pc" class="sticky-top container flex-column viewable-on-pc">
                     <nav class="navbar navbar-light flex-md-column pt-5">
                         <a class="navbar-brand" href="#">
                             <img src="https://res.cloudinary.com/pelos-locos/image/upload/v1644650390/Portafolio/SinFondo.png" alt="" width="150" height="150">
@@ -55,17 +56,40 @@
                     </nav>
                 </section>
 
+                <section class="class-100-width viewable-on-movil" >
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBarMovil">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#" id="text-icon-navbar">JUAN CASANOVA</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#container-about-me-movil">ABOUT ME</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#container-skills-movil">SKILLS</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#container-projects-movil">PROJECTS</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </section>
+
+                <section class="intro-pc class-flex class-mid-vertical" id="particles-js">
+                    <div id="container-title" class="class-flex">
+                        <h2 class="class-flex class-mid-mid class-100-width">
+                            <span class="typed"></span>
+                        </h2>
+                    </div>
+                </section>
+
             <!-- ******************* PARTS OF PC ********************* -->
                 <section class="body-pc class-flex " >
-
-
-                    <section class="intro-pc class-flex class-mid-vertical" id="particles-js">
-                        <div id="container-title" class="class-flex">
-                            <h2 class="class-flex class-mid-mid class-100-width">
-                                <span class="typed"></span>
-                            </h2>
-                        </div>
-                    </section>
 
 
                     <section id="container-about-me" class="class-flex viewable-on-pc">
@@ -89,17 +113,17 @@
                             SKILLS
                         </h3>
                         <div class="class-100-width class-flex" id="container-cols">
-                            <div id="col-1" class="class-25-width class-flex class-mid-botton">
+                            <div id="col-11" class="class-25-width class-flex class-mid-botton" onmouseover="changeImg1()" onmouseout="quitImg()">
                                 <h3 class="text-white text-center text-skill">
                                     Back Developer
                                 </h3>
                             </div>
-                            <div id="col-2" class="class-50-width class-flex class-mid-botton">
+                            <div id="col-22" class="class-50-width class-flex class-mid-botton" onmouseover="changeImg2()" onmouseout="quitImg()">
                                 <h3 class="text-white text-center text-skill">
                                     Front Developer
                                 </h3>
                             </div>
-                            <div id="col-3" class="class-25-width class-flex class-mid-botton">
+                            <div id="col-33" class="class-25-width class-flex class-mid-botton" onmouseover="changeImg3()" onmouseout="quitImg()">
                                 <h3 class="text-white text-center text-skill">
                                     Extras
                                 </h3>
@@ -134,7 +158,7 @@
                                 This page is made with html, css and js
                             </p>
                             <p class="text-project">
-                                was made for a local business, in the area of ​​education.
+                                Was made for a local business, in the area of ​​education.
                             </p>
                         </div>
 
@@ -176,7 +200,7 @@
                         
                         <div class="container-project-right">
                             <a href="https://twitter-whit-react.netlify.app/?fbclid=IwAR0yFw_FxCC0HEJ1Tj0dGDo-UhnRk9_L8z3oSvy8uPUORq4f4shWuMpTy9w" target="blank">
-                                <h4 class="link-pages">WEB PAGES</h4>
+                                <h4 class="link-pages">WEB PAGE</h4>
                             </a>
                             <p class="text-project">
                                 This page is made with html, css, and js.
@@ -197,16 +221,153 @@
 
     <!-- ********************* Design Movil ****************************** -->
         
-        <section class="class-flex viewable-on-movil">
+        <section class="class-flex viewable-on-movil flex-wrap class-mid-mid" id="body-movil">
             <!-- ******************* NAV BAR MOVIL ******************* -->
-            <section>
-
-            </section>
+            
 
         <!-- ******************* PARTS OF MOVIL ****************** -->
-            <section>
+
+            <section id="container-about-me-movil" class="viewable-on-movil class-flex flex-wrap class-mid-mid">
+                <img id="img-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1644650390/Portafolio/SinFondo.png" alt="">
+                <div>
+                    <h4 class="text-center" id="title-about-me-movil">Lic. Juan Casanova</h4>
+                    <p id="text-about-me-movil">
+                        My name is Juan Manuel Casanova Cruz, I've a degree in interactive digital content, and a law student.
+                        <br><br>
+                        I've experience developing since 2016 in the c# and c++ language, and since 2018 i've been developing 
+                        in web, I started with the MEAN stack, and recently I just graduated from Academlo where I got experience 
+                        developing with the MERN stack.
+                    </p>
+                </div>
+            </section>
+
+            <section id="container-skills-movil" class="class-flex flex-wrap">
+
+                <div class="flex-wrap class-flex class-mid-mid class-100-width container-img-skill" >
+                    <h4 class="text-center title-skill-movil">
+                        Back Developer
+                    </h4>
+                    <img class="img-skill-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1645745641/Portafolio/nodejs.png" alt="">
+                    <img class="img-skill-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1645745642/Portafolio/expres.jpg.png" alt="">
+                    <img class="img-skill-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1645745641/Portafolio/md.png" alt="">
+                </div>
+
+                <div class="flex-wrap class-flex class-mid-mid class-100-width container-img-skill">
+                    <h4 class="text-center title-skill-movil">
+                        Front Developer
+                    </h4>
+                    <img class="img-skill-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1645745642/Portafolio/Captura.png" alt="">
+                    <img class="img-skill-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1645745642/Portafolio/Captura1.png" alt="">
+                    <img class="img-skill-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1645745641/Portafolio/React.png" alt="">
+                    <img class="img-skill-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1645745641/Portafolio/bootstrap-1.png" alt="">
+                </div>
+
+                <div class="flex-wrap class-flex class-mid-mid class-100-width container-img-skill">
+                    <h4 class="text-center title-skill-movil">
+                        Skills Extras
+                    </h4>
+                    <img class="img-skill-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1645745641/Portafolio/scrum-logo.png" alt="">
+                    <img class="img-skill-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1645745642/Portafolio/illustrator-Logo.png" alt="">
+                    <img class="img-skill-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1645745642/Portafolio/GitHub-Logo-Blanco.png" alt="">
+                    <img class="img-skill-movil" src="https://res.cloudinary.com/pelos-locos/image/upload/v1645745641/Portafolio/png-transparent-adobe-brand-brands-logo-logos-photoshop-logos-brands-icon-thumbnail.png" alt="">
+                </div>
+            </section>
+
+            <section id="container-projects-movil" class="class-flex flex-wrap class-mid-mid">
+                <h2 id="title-section">
+                    PROJECTS
+                </h2>
+
+                <div class="container-project-movil">
+                    <a class="text-ancor-movil" href="https://www.mantenimientoresindecialqro.com/" target="blank">
+                        <h4 class="link-pages-movil">WEB PAGE</h4>
+                    </a>
+                    <p class="text-project-movil">
+                        This page is made with html, css and js
+                    </p>
+                    <p class="text-project-movil">
+                        Was made for a local home repair shop business.
+                    </p>
+                </div>
+
+                <div class="container-project-movil">
+                    <a class="text-ancor-movil" href="https://educa-id.com/" target="blank">
+                        <h4 class="link-pages-movil">WEB PAGE</h4>
+                    </a>
+                    <p class="text-project-movil">
+                        This page is made with html, css and js
+                    </p>
+                    <p class="text-project-movil">
+                        Was made for a local business, in the area of ​​education.
+                    </p>
+                </div>
+
+                <div class="container-project-movil">
+                    <a class="text-ancor-movil" href="https://remix-random-phases.netlify.app/" target="blank">
+                        <h4 class="link-pages-movil">WEB APPLICATION</h4>
+                    </a>
+                    <p class="text-project-movil">
+                        This page is made with html, css, js and REACT
+                    </p>
+                    <p class="text-project-movil">
+                        On this page the phrase is randomly changed
+                    </p>
+                </div>
+
+                <div class="container-project-movil">
+                    <a class="text-ancor-movil" href="https://weatherapp-casanova.netlify.app/" target="blank">
+                        <h4 class="link-pages-movil">WEB APPLICATION</h4>
+                    </a>
+                    <p class="text-project-movil">
+                        This page is made with html, css, js and REACT
+                    </p>
+                    <p class="text-project-movil">
+                        In this application, it obtains your location and gives you its temperature in degrees Celsius and Fahrenheit.
+                    </p>
+                </div>
+
+                <div class="container-project-movil">
+                    <a class="text-ancor-movil" href="https://apitrrivia.netlify.app/?fbclid=IwAR1Z4DtX2DimQvcgHZlJOKlCKUqNN7oIfoBrmtuBntE0XZPeZFlNxndF3yg" target="blank">
+                        <h4 class="link-pages-movil">WEB APPLICATION</h4>
+                    </a>
+                    <p class="text-project-movil">
+                        This page is made with html, css and js
+                    </p>
+                    <p class="text-project-movil">
+                        In this application it is a small trivia in which it gives you the option to choose the number of questions and what the questions are about.
+                    </p>
+                </div>
+
+                <div class="container-project-movil">
+                    <a class="text-ancor-movil" href="https://twitter-whit-react.netlify.app/?fbclid=IwAR0yFw_FxCC0HEJ1Tj0dGDo-UhnRk9_L8z3oSvy8uPUORq4f4shWuMpTy9w" target="blank">
+                        <h4 class="link-pages-movil">WEB PAGE</h4>
+                    </a>
+                    <p class="text-project-movil">
+                        This page is made with html, css and js
+                    </p>
+                    <p class="text-project-movil">
+                        It is pure layout simulating twitter without functionality.
+                    </p>
+                </div>
 
             </section>
+
+            <section class="class-flex" id="container-img-icons">
+
+                <a class="ancor-icon" target="_blank" href="https://github.com/Juan-Casanova">
+                    <img class="ancor-icon-img" src="https://res.cloudinary.com/pelos-locos/image/upload/v1644652015/Portafolio/github.png" alt="">
+                </a>
+
+                <a class="ancor-icon" target="_blank" href="https://linkedin.com/in/juan-m-casanova">
+                    <img class="ancor-icon-img" src="https://res.cloudinary.com/pelos-locos/image/upload/v1644652014/Portafolio/linkedin.png" alt="">
+                </a>
+
+                <a class="ancor-icon" target="_blank" href="mailto:casanovajm199621@gmail.com">
+                    <img class="ancor-icon-img" src="https://res.cloudinary.com/pelos-locos/image/upload/v1644652015/Portafolio/gmail.png" alt="">
+                </a>
+
+            </section>
+
         </section>
 
 </body>
