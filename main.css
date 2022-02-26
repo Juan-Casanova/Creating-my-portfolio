@@ -382,7 +382,8 @@ body {
 @media (min-width: 320px) {
 
     .link-pages-movil {
-        font-size: .75em;
+        margin-top: 25px;
+        font-size: 1em;
     }
 
     .text-project-movil {
